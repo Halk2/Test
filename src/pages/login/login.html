@@ -1,0 +1,39 @@
+
+<!-- <ion-header>
+
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+
+</ion-header> -->
+
+
+<ion-content padding>
+	<ion-grid>
+		<ion-row>
+			<ion-col width-33 center>
+				<ion-col  class="image-wrapper">
+					<img  src="../assets/images/Logo.png"/>
+				</ion-col>
+				<form #form="ngForm" (ngSubmit)="logForm(form)" id="login-form">
+			      <ion-item >
+			      	<ion-label stacked >EMAIL ADDRESS</ion-label>
+			        <ion-input type="email" [(ngModel)]="todo.email" ngControl="email" required name="email" placeholder="Enter e-mail address..."></ion-input>
+			      </ion-item>
+			      <ion-item>
+			      	<ion-label stacked>PASSWORD</ion-label>
+			        <ion-input type="password" [(ngModel)]="todo.password" required ngControl="password" name="password" placeholder="Enter your password..."></ion-input>
+			      </ion-item>
+			      <div class="button-wrapper">
+			      	<button ion-button type="submit" color="dark" round >SIGN IN</button>
+			      </div>
+			    </form>
+		    </ion-col>
+		    <ion-col width-67 center>
+				<div class="predictive">
+					Predictive Intelligence
+				</div>
+		    </ion-col>
+	    </ion-row>
+	</ion-grid>
+</ion-content>
