@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import {LoginPage} from '../../pages/login/login';
 import {OnePage} from '../../pages/one/one';
 
+
 /*
   Generated class for the Home page.
 
@@ -16,6 +17,9 @@ import {OnePage} from '../../pages/one/one';
 export class HomePage {
   email:string;
   password:string;
+  users = [{ id: 25, name: 'Andrii', username: 'hulk'},
+  { id: 26, name: 'Oleg', username: 'batman'},
+  { id: 27, name: 'Nazar', username: 'superman'}];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   	this.email = navParams.get("email");
   	this.password = navParams.get("password");
@@ -25,6 +29,9 @@ export class HomePage {
     console.log('ionViewDidLoad HomePage');
     console.log("email: "+this.email);
     console.log("password: "+this.password);
+  }
+  addPlayerCard(){
+     console.log("sdfasdfasf"); 
   }
 
 }
